@@ -1,0 +1,6 @@
+repo: 92b0c895a19aa47c9c15aca60e07db459cc94af7
+node: 6f417e74a22dadb9e0370696f219e63f1b196344
+branch: default
+latesttag: matlabdomain-0.2.8
+latesttagdistance: 19
+changessincelatesttag: 20
