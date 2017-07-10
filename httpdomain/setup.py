@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import with_statement
 
-from setuptools import setup, find_packages
-
+from setuptools import find_packages, setup
 
 requires = [
     'Sphinx >= 1.0',
