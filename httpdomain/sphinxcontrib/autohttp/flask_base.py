@@ -76,7 +76,16 @@ def quickref_directive(method, path, content):
     name = ""
     ref = path.replace("<", "(").replace(">", ")").replace("/", "-").replace(
         ":", "-")
+    in_quickref = False
+
     for line in content:
+        if in_quickref:
+            if line.startswith('    '):
+                description += ' ' + line.lstrip()
+                continue
+            else:
+                break
+
         qref = rcomp.match(line)
         if qref:
             quickref = qref.group("quick")
@@ -86,7 +95,7 @@ def quickref_directive(method, path, content):
                 description = parts[1]
             else:
                 description = quickref
-            break
+            in_quickref = True
 
     row = {}
     row['name'] = name
