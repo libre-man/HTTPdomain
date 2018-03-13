@@ -19,8 +19,7 @@ from sphinx.util import force_decode
 from sphinx.pycode import ModuleAnalyzer
 from sphinxcontrib import httpdomain
 from sphinx.util.nodes import nested_parse_with_titles
-from sphinx.util.compat import Directive
-from docutils.parsers.rst import directives
+from docutils.parsers.rst import directives, Directive
 from docutils.statemachine import ViewList
 from sphinx.util.docstrings import prepare_docstring
 from sphinxcontrib.autohttp.common import import_object, http_directive
